@@ -1,114 +1,114 @@
-                        body {
-                    background-color: hsla(243, 100%, 68%, 0.34);
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-                
-                .container {
-                    background: #EBECF1;
-                    width: 300px;
-                    height: 500px;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
-                    margin-left: 500px;
-                    margin-right: 500px;
-                    border-radius: 15px;
-                    box-shadow: 3px 3px 10px black, -3px -3px 10px black;
-                }
-                
-                .calc {
-                    height: 500px;
-                }
-                
-                .display {
-                    border: none;
-                    outline: none;
-                    margin: 30px 50px;
-                    width: 196px;
-                    height: 78px;
-                    text-align: right;
-                    font-weight: 800;
-                    color: black;
-                    background: #EBECF1;
-                    box-shadow: inset 1.5px 1.5px 3px #CBCBCB, inset -1.5px -1.5px 3px #FFFFFF;
-                    border-radius: 15px 15px 5px 5px;
-                }
-                
-                .button1 {
-                    margin: 50px 50px;
-                    width: 200px;
-                    height: 260px;
-                    border: none;
-                    outline: none;
-                    background: #EBECF1;
-                }
-                
-                .button {
-                    margin: 12px 3.5px 13px;
-                    width: 40px;
-                    height: 40px;
-                    border: none;
-                    outline: none;
-                    background-color: white;
-                    border-radius: 500px;
-                    font-weight: bold;
-                    font-size: large;
-                    color: black;
-                    box-shadow: 0px 2px 5px -2px rgb(22, 22, 22);
-                    text-align: center;
-                    cursor: pointer;
-                }
-                
-                .keys {
-                    background-color: white;
-                }
-                
-                .operator {
-                    background-color: hsla(0, 0%, 0%, 0.33);
-                }
-                
-                .equal {
-                    background-color: #72BDEA;
-                }
-                
-                .plus {
-                    background-color: #82E0AA;
-                }
-                
-                .minus {
-                    background-color: #F7DC6F;
-                }
-                
-                .multiple {
-                    background-color: #DE97EC;
-                }
-                
-                .divide {
-                    background-color: #CA6F1E;
-                }
-                
-                .clear {
-                    background-color: #C39BD3;
-                }
-                
-                .button:hover {
-                    background-color: #212F3D;
-                    color: white;
-                }
-                
-                .button:active {
-                    opacity: 0.3;
-                    background: #EBECF1;
-                    box-shadow: inset 4px 3px 4px #CBCBCB, inset -4px -3px 4px #FFFFFF;
-                    color: black;
-                }
-                /* mobile phone portrait or landscape */
-                /* @media only screen and (max-device-width:640px){
+                                body {
+                            background-color: hsla(243, 100%, 68%, 0.34);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        
+                        .container {
+                            background: #EBECF1;
+                            width: 300px;
+                            height: 500px;
+                            margin-top: 50px;
+                            margin-bottom: 50px;
+                            margin-left: 500px;
+                            margin-right: 500px;
+                            border-radius: 15px;
+                            box-shadow: 3px 3px 10px black, -3px -3px 10px black;
+                        }
+                        
+                        .calc {
+                            height: 500px;
+                        }
+                        
+                        .display {
+                            border: none;
+                            outline: none;
+                            margin: 30px 50px;
+                            width: 196px;
+                            height: 78px;
+                            text-align: right;
+                            font-weight: 800;
+                            color: black;
+                            background: #EBECF1;
+                            box-shadow: inset 1.5px 1.5px 3px #CBCBCB, inset -1.5px -1.5px 3px #FFFFFF;
+                            border-radius: 15px 15px 5px 5px;
+                        }
+                        
+                        .button1 {
+                            margin: 50px 50px;
+                            width: 200px;
+                            height: 260px;
+                            border: none;
+                            outline: none;
+                            background: #EBECF1;
+                        }
+                        
+                        .button {
+                            margin: 12px 3.5px 13px;
+                            width: 40px;
+                            height: 40px;
+                            border: none;
+                            outline: none;
+                            background-color: white;
+                            border-radius: 500px;
+                            font-weight: bold;
+                            font-size: large;
+                            color: black;
+                            box-shadow: 0px 2px 5px -2px rgb(22, 22, 22);
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                        
+                        .keys {
+                            background-color: white;
+                        }
+                        
+                        .operator {
+                            background-color: hsla(0, 0%, 0%, 0.33);
+                        }
+                        
+                        .equal {
+                            background-color: #72BDEA;
+                        }
+                        
+                        .plus {
+                            background-color: #82E0AA;
+                        }
+                        
+                        .minus {
+                            background-color: #F7DC6F;
+                        }
+                        
+                        .multiple {
+                            background-color: #DE97EC;
+                        }
+                        
+                        .divide {
+                            background-color: #CA6F1E;
+                        }
+                        
+                        .clear {
+                            background-color: #C39BD3;
+                        }
+                        
+                        .button:hover {
+                            background-color: #212F3D;
+                            color: white;
+                        }
+                        
+                        .button:active {
+                            opacity: 0.3;
+                            background: #EBECF1;
+                            box-shadow: inset 4px 3px 4px #CBCBCB, inset -4px -3px 4px #FFFFFF;
+                            color: black;
+                        }
+                        /* mobile phone portrait or landscape */
+                        /* @media only screen and (max-device-width:640px){
 
 } */
-                
-                @media only screen and (max-width: 500px) {
-                    /* For mobile phones: */
-                    [class*="col-"] {
-                        width: 500px;
+                        
+                        @media only screen and (max-width: 500px) {
+                            /* For mobile phones: */
+                            [class*="col-"] {
+                                width: 100px;
