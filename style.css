@@ -13,7 +13,7 @@ body {
     margin-bottom: 50px;
     margin-left: 500px;
     margin-right: 500px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 3px 3px 10px black, -3px -3px 10px black;
 }
 
@@ -46,8 +46,6 @@ body {
 
 .button {
     margin: 12px 3.5px 13px;
-    /* margin: 6px 3.5px 6px; */
-    /* padding: 6px 8px; */
     width: 40px;
     height: 40px;
     border: none;
@@ -71,22 +69,37 @@ body {
 }
 
 .equal {
-    background-color: hsla(349, 87%, 51%, 0.29);
+    background-color: #72BDEA;
 }
 
-.clear {}
-
-.divide {}
-
-
+.plus {
+    background-color: #82E0AA;
 }
+
+.minus {
+    background-color: #F7DC6F;
+}
+
+.multiple {
+    background-color: #DE97EC;
+}
+
+.divide {
+    background-color: #CA6F1E;
+}
+
+.clear {
+    background-color: #C39BD3;
+}
+
 .button:hover {
-    /* background-color: #523A5C; */
-    
-    background-color: hsla(199, 100%, 23%, 0.79);
+    background-color: #212F3D;
     color: white;
 }
+
 .button:active {
     opacity: 0.3;
+    background: #EBECF1;
     box-shadow: inset 4px 3px 4px #CBCBCB, inset -4px -3px 4px #FFFFFF;
+    color: black;
 }
