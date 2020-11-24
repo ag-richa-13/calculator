@@ -45,8 +45,8 @@ body {
 }
 
 .button {
-    /* margin: 12px 3.5px 13px; */
-    margin: 6px 3.5px 6px;
+    margin: 12px 3.5px 13px;
+    /* margin: 6px 3.5px 6px; */
     /* padding: 6px 8px; */
     width: 40px;
     height: 40px;
@@ -72,30 +72,20 @@ body {
 
 .equal {
     background-color: hsla(349, 87%, 51%, 0.29);
-    height: 90px;
-    grid-area: 4 / 4 / span 2 / span 1;
 }
 
 .clear {}
 
 .divide {}
 
-.zero {
-    width: 90px;
-    color: ;
-}
 
-.plus {
-    background-color: hsla(356, 100%, 56%, 0.60);
-    margin-left: 105px;
 }
-
 .button:hover {
     /* background-color: #523A5C; */
+    
     background-color: hsla(199, 100%, 23%, 0.79);
     color: white;
 }
-
 .button:active {
     opacity: 0.3;
     box-shadow: inset 4px 3px 4px #CBCBCB, inset -4px -3px 4px #FFFFFF;
