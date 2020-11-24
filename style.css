@@ -1,4 +1,4 @@
-body {
+        body {
     background-color: hsla(243, 100%, 68%, 0.34);
     display: flex;
     flex-direction: column;
@@ -103,3 +103,16 @@ body {
     box-shadow: inset 4px 3px 4px #CBCBCB, inset -4px -3px 4px #FFFFFF;
     color: black;
 }
+
+
+/* mobile phone portrait or landscape */
+
+
+/* @media only screen and (max-device-width:640px){
+
+} */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
