@@ -103,3 +103,23 @@ body {
     box-shadow: inset 4px 3px 4px #CBCBCB, inset -4px -3px 4px #FFFFFF;
     color: black;
 }
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+        width: 80%;
+        padding: 0;
+    }
+    .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
