@@ -120,4 +120,11 @@ body {
     body {
         background-color: hsl(168, 100%, 50%);
     }
+    .container {
+        display: block;
+        align-items: center;
+    }
+    .button1 {
+        align-items: center;
+    }
 }
