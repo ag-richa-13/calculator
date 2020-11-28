@@ -103,3 +103,21 @@ body {
     box-shadow: inset 4px 3px 4px #CBCBCB, inset -4px -3px 4px #FFFFFF;
     color: black;
 }
+
+
+/*------------ Media Queries-----------*/
+
+
+/* ----------------For Desktop and mac------------- */
+
+
+/* ---------------For Tablet And Ipad----------------- */
+
+
+/* ---------------For Mobile Phones---------------- */
+
+@media (max-width:768px) {
+    body {
+        background-color: hsl(168, 100%, 50%);
+    }
+}
