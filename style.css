@@ -116,15 +116,14 @@ body {
 
 /* ---------------For Mobile Phones---------------- */
 
-@media (max-width:768px) {
-    body {
-        background-color: hsl(168, 100%, 50%);
-    }
-    .container {
-        display: block;
-        align-items: center;
-    }
-    .button1 {
-        align-items: center;
+@media (max-width:559px) {
+    body,
+    .button,
+    .container,
+    .button1,
+    .display,
+    .calc {
+        width: auto;
+        height: auto;
     }
 }
