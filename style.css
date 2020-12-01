@@ -116,13 +116,13 @@ body {
 
 /* ---------------For Mobile Phones---------------- */
 
-@media (max-width:559px) {
+@media (max-width:100px) {
     body,
-    .button,
     .container,
+    .calc,
+    .button,
     .button1,
-    .calc {
-        width: auto;
-        height: auto;
+    .display {
+        width: 100%;
     }
 }
