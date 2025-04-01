@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="keywords" content="html">
-    <meta name="style" content="css">
-    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1e2024">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Advanced Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="cal-box">
-            <form name="calc" class="calc">
-
-                <!-- display for answer -->
-                <input type="display" class="display" name="input" placeholder="0" size="14">
-                <br>
-                <!-- keys and operators -->
-                <div class="button1">
-
-                    <input class="button keys 1" type="button" name="one" value="1" onclick="calc.input.value+='1'" />
-                    <input class="button keys 2" type="button" name="two" value="2" onclick="calc.input.value+='2'" />
-                    <input class="button keys 3" type="button" name="three" value="3" onclick="calc.input.value+='3'" />
-                    <input type="button" class="button operator plus" name="plus" value=" + " onclick="calc.input.value+=' + '" />
-                    <br>
-                    <input class="button keys 4" type="button" name="four" value="4" onclick="calc.input.value+='4'" />
-                    <input class="button keys 5" type="button" name="five" value="5" onclick="calc.input.value+='5'" />
-                    <input class="button keys 6" type="button" name="six" value="6" onclick="calc.input.value+='6'" />
-                    <input type="button" class="button operator minus" name="minus" value=" - " onclick="calc.input.value+=' - '" />
-                    <br>
-                    <input class="button keys 7 btn" type="button" name="seven" value="7" onclick="calc.input.value+='7'" />
-                    <input class="button keys 8 btn" type="button" name="eight" value="8" onclick="calc.input.value+='8'" />
-                    <input class="button keys 9 btn" type="button" name="nine" value="9" onclick="calc.input.value+='9'" />
-                    <input type="button" class="button operator multiple" name="multiplication" value=" &times " onclick="calc.input.value+=' * '" />
-                    <br>
-                    <input type="button" name="clear" class="button clear keys" value="C" onclick="calc.input.value = ''">
-                    <!-- clr function will clear values -->
-                    <input class="button keys zero last btn" type="button" name="zero" value="0" onclick="calc.input.value+='0'" />
-                    <input class="button equal keys last" type="button" name="equal" value="=" onclick="calc.input.value=eval(calc.input.value)" />
-                    <input type="button" class="button operator divide last btn" name="divide" value=" &divide " onclick="calc.input.value+=' / '" />
-                </div>
-
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <div class="previous-operand"></div>
+                <div class="current-operand">0</div>
+            </div>
+            <div class="scientific-functions">
+                <button class="sci-btn" onclick="calculateSci('sqrt')">√</button>
+                <button class="sci-btn" onclick="calculateSci('square')">x²</button>
+                <button class="sci-btn" onclick="calculateSci('sin')">sin</button>
+                <button class="sci-btn" onclick="calculateSci('cos')">cos</button>
+            </div>
+            <div class="keypad">
+                <button class="clear" onclick="clearDisplay()">AC</button>
+                <button class="operator" onclick="handleOperator('/')">&divide;</button>
+                <button class="operator" onclick="handleOperator('*')">&times;</button>
+                <button class="operator" onclick="handleOperator('-')">-</button>
+                
+                <button class="number" onclick="appendNumber('7')">7</button>
+                <button class="number" onclick="appendNumber('8')">8</button>
+                <button class="number" onclick="appendNumber('9')">9</button>
+                <button class="operator" onclick="handleOperator('+')">+</button>
+                
+                <button class="number" onclick="appendNumber('4')">4</button>
+                <button class="number" onclick="appendNumber('5')">5</button>
+                <button class="number" onclick="appendNumber('6')">6</button>
+                <button class="delete" onclick="deleteNumber()">DEL</button>
+                
+                <button class="number" onclick="appendNumber('1')">1</button>
+                <button class="number" onclick="appendNumber('2')">2</button>
+                <button class="number" onclick="appendNumber('3')">3</button>
+                <button class="equals" onclick="calculate()">=</button>
+                
+                <button class="number zero" onclick="appendNumber('0')">0</button>
+                <button class="number" onclick="appendNumber('.')">.</button>
+            </div>
         </div>
-        </form>
-
+        <div class="history-panel">
+            <div class="history-header">
+                <h3>History</h3>
+                <button class="clear-history" onclick="clearHistory()">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+            <div class="history-list"></div>
+        </div>
     </div>
-
-    </div>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
